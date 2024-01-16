@@ -1,14 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+body{
+   font-family: Poppins;
+}
+
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
     background-color: #8186D5;
-    height: 100px;
     position: fixed;
     z-index: 100;
-    height: 100px;
+    height: 120px;
     top: 0;
     left: 0;
     right: 0;
@@ -17,7 +24,7 @@ header{
 }
 
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    
     font-size: larger;
     position: relative;
     left: 40px;
@@ -29,21 +36,18 @@ p{
     justify-content: center;
     align-items: center;
     
-}
-
-img{
-    height: 150px;
-    border-radius: 100px;
     
 }
 
+
+
  .enlances-container{
-     font-family: 'Courier New', Courier, monospace;
+  
      height: 50px;
      font-size: larger;
-     position: relative;
-     left: 40px;
-     bottom: 140px;
+    position: relative;
+    bottom: 150px;
+    left: 40px;
      
 }
 
@@ -97,11 +101,45 @@ img{
    transform: scale(1.2);
 }
  
+h3
+{
+ font-size: 30px;
+ position: relative;
+ left: 20px;
+ top: 10px;
+}
 
-h1{
-    font-size: 2pc;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    left: 50px;
-    top: 120px
+.card-baños{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -50px;
+  position: relative;
+}
+
+.card-baños .card-img-baños .card{
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0 0 0 0;
+}
+
+.card-baños .card-img-baños .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-baños .card-img-baños .card .contenido{
+  position: absolute;
+  top: 20%;
+  width: 1140px;
+  max-width:  80%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 30%;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow:  0 5px 10px #0004;
+
 }
