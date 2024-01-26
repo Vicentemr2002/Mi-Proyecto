@@ -45,7 +45,7 @@ header {
   position: fixed;
   height: 100%;
   top: 0;
-  left: -60%;
+  left: -80%;
   width: 80%;
   max-width: 400px;
   transition: all 0.5s linear;
@@ -154,7 +154,7 @@ h3 {
 }
 
 .card-baños {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   margin-top: -50px;
@@ -171,6 +171,13 @@ h3 {
   height: 100%;
   object-fit: cover;
 }
+
+.card-baños .card, 
+.card-img-baños .card, .image{
+  width: 100%;
+  height: 100%;
+}
+
 
 .card-baños .card-img-baños .card .contenido {
   position: absolute;
@@ -439,25 +446,24 @@ h3 {
   }
 }
 
-/**/
-/* @media (max-width: 670px) { */
-/**/
-/*     .img { */
-/*        width: 50%; */
-/*    } */
-/*     */
-/**/
-/*    .card-baños .card-img-baños .card .contenido{ */
-/*     padding-right: 0; */
-/*    } */
-/*       */
-/**/
-/*   .enlances-container{ */
-/*     position: relative; */
-/*     right: 20px; */
-/*   } */
-/*   */
-/*    .enlances-redsocial-container{ */
-/*         font-size: 30px; */
-/*     */
-/* } */
+
+@media screen and (max-width:600px) {                        
+  
+    .mini-fotos{
+      display: none !important;
+    }
+
+    .card-baños .card-img-baños .card .contenido{ 
+      padding: 10%;
+      top: 10%;
+    }
+
+    .slider{
+      top: 50%;
+      right: 0;
+      width: 100%;
+      justify-content: space-between;
+      max-width: 100%;
+    }
+
+}
