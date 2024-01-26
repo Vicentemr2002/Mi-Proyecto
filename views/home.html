@@ -13,23 +13,49 @@
 <body>
     <header>
 
-        <p>+Kotitas.</p>
-        <p>.Tu Amigo Fiel</p>
+        <div class="header-izquierda">
+                
+            <div class="boton-abrir" id="open">
 
-        <div class="img">
-            <img src="../assets/img/principal.jpg"
-                style="border-radius: 100px; height: 150px; position:  relative; bottom: 80px;">
+            <img src="../assets/img/menu.svg" alt="">
+
+            </div>
+        </div> 
+          
+
+        <div class="header-derecha">
+            
+         <div class="header-logo">
+            <img src="../assets/img/principal.jpg">
+                                                                                                                                               </div>
         </div>
 
-        <li>
-            <ul>
+        <nav id="main-menu">
+ 
+          <div class="container-boton-cerrar">
+                
+            <div class="boton-cerrar" id="close">
+
+            <img src="../assets/img/icons8-close.svg" alt="">
+
+            </div>
+          </div>
+
                 <div class="enlances-container">
+                <ol>
+                    <li>
                     <a href="home.html">Home</a>
+                    </li>
+                    <li>
                     <a href="k.productos.html">Productos</a>
-                    <a href="k.turnos.html">Turnos</a>
+                    </li>
+                    <li>
+                    <a href="k.turn os.html">Turnos</a>
+                    </li>
+                </ol>   
                 </div>
-            </ul>
-        </li>
+                
+        
         <div class="enlances-redsocial-container">
             <a href="https://instagram.com/" class="instagram" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
@@ -38,6 +64,9 @@
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>
+
+        </nav>
+
     </header>
 
     <div class="intermedio-container">
@@ -45,9 +74,9 @@
         <h1>Estamos al cuidado. De tus +Kotitas</h1>
 
         <div class="card-baños">
-            <div class="card-img-baños">                    
-                <div class="card">
-                <div class="image">
+            <div class="card-img-baños" id="pantalla">                    
+                 <div class="card">
+                     <div class="image">
                         <img src="../assets/img/raza mestiza.jpg">
                     </div>
                     <div class="contenido">
@@ -60,7 +89,7 @@
                             como su nombre lo indica, vienen del mestizaje de varias razas de perros.</div>
 
                         <div class="button">
-                            <button>PEDIR TURNO</button>
+                            <button >PEDIR TURNO</button>
                         </div>
                     </div>
                 </div>
@@ -124,9 +153,9 @@
                     </div>
                 </div>
             </div>
-            <div class="thumbnail">
+            <div class="mini-fotos">
                 <div class="card">
-                    <img src="../assets/img/raza mestiza.jpg">
+                    <img src="../assets/img/raza mestiza.jpg"/> 
                     <div class="contenido">
                         <div class="raza">
                             Raza: Mestiza
@@ -137,7 +166,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../assets/img/raza caniche.jpg">
+                    <img src="../assets/img/Perros-Caniches.jpg"/>
                     <div class="contenido">
                         <div class="raza">
                             Raza: Caniche
@@ -148,7 +177,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../assets/img/raza golden retriever.jpg">
+                    <img src="../assets/img/raza golden retriever.jpg"/>
                     <div class="contenido">
                         <div class="raza">
                             Raza: Golden Retriever
@@ -159,7 +188,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../assets/img/raza schnauzer.jpg">
+                    <img src="../assets/img/Peluquería-De-Perros.jpg"/>
                     <div class="contenido">
                         <div class="raza">
                             Raza: Schnauzer
@@ -169,12 +198,82 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
+            <div class="slider">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <div class="time"></div>
+        </div>
+<hr>
+<br>
+<br>
+        <div class="card-alimentos">
+            <div class="productos">                    
+                 <div class="card-productos">
+                     <div class="image">
+                        <img src="">
+                    </div>
+                    <div class="contenido">
+                        <div class="alimento">Alimento </div>
+                        <div class="precio">Precio: 1000</div>
+                        <div class="button">
+                            <button >Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-productos">
+                    <div class="image">
+                        <img src="">
+                    </div>
+                    <div class="contenido">
+                        <div class="alimento">Raza: Caniche</div>
+                        <div class="precio">Precio: 1000</div>
+                        <div class="button">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-productos">
+                    <div class="image">
+                        <img src="">
+                    </div>
+                    <div class="contenido">
+                        <div class="alimento">Raza: Golden Retrievir</div>
+                        <div class="precio">Precio 1000</div>
+                        <div class="button">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-productos">
+                    <div class="image">
+                        <img src="">
+                    </div>
+                    <div class="contenido">
+                        <div class="alimento">Raza: Schnauzer</div>
+                        <div class="precio">Precio: 10000</div>
+                        <div class="button">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="slider">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <div class="time"></div>
         </div>
     </div>
 
 
     <footer></footer>
+    <script src="../assets/js/index.js"></script>
 </body>
-
+   
 </html>
