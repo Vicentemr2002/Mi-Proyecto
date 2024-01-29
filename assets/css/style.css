@@ -115,22 +115,24 @@ a:link {
 
 a:visited {
   color: #1F3C88;
-  border-radius: 2px;
+  border-radius: 50px;
 }
 
 a:focus {
   border-bottom: 1px solid;
-  background: #bae498;
+  background: silver;
+  
 }
 
 a:hover {
   border-bottom: 1px solid;
-  background: #cdfeaa;
+  background: silver;
+  border-radius: 20px;
 }
 
 a:active {
   background: #1F3C88;
-  color: #cdfeaa;
+  color: silver;
 }
 
 
@@ -532,7 +534,7 @@ h3 {
 .button-alimento button:hover {
   transition: 0.3s;
   background-color: #E6E6EA;
-  color: black;
+  color: black ;
 }
 
 .categoria {
