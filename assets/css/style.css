@@ -475,13 +475,16 @@ h3 {
   padding-bottom: 10px;  
 }
 
-.container-alimento {
+.container-alimento , .container-ropa , .container-accesorios {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
   gap: 20px;
 
 }
+
+
+
 
 .card-productos {
   width: 300px;
@@ -491,7 +494,7 @@ h3 {
   border: 1px solid silver;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 
@@ -570,6 +573,7 @@ footer{
   font-size: 0.9rem;
   padding: 0 20px;
 }
+
 
 
 
