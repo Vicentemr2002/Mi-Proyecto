@@ -271,20 +271,6 @@ h3 {
 }
 
 
-footer {
-  background-color: silver;
-
-}
-
-.title-footer {
-  font-size: 1.4rem;
-  padding: 0 10px;
-}
-
-.footer-date {
-  font-size: 0.9rem;
-  padding: 0 20px;
-}
 
 
 .container-intermedio {
@@ -302,6 +288,20 @@ footer {
 .container-right {
   flex: 1;
   padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-alimentos {
+  width: 300px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -314,8 +314,40 @@ footer {
   padding: 0 10px;
 }
 
+.index-comtainer-productos{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.index-img-alimento{
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: silver;
+}
+
+.index-img-alimento img{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
 
 
+footer {
+  background-color: silver;
+
+}
+
+.title-footer {
+  font-size: 1.4rem;
+  padding: 0 10px;
+}
+
+.footer-date {
+  font-size: 0.9rem;
+  padding: 0 20px;
+}
 
 @media screen and (max-width:600px) {
 
