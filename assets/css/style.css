@@ -5,6 +5,8 @@
 body {
   font-family: Poppins;
   font-size: 20px;
+  overflow-x: hidden;
+
 
 }
 
@@ -152,11 +154,11 @@ a:active {
 }
 
 
-.title h2{
+.title h2 {
   padding: 0 80px;
 }
 
-.home-slider{
+.home-slider {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,67 +273,35 @@ h3 {
 }
 
 
-
-
-.container-intermedio {
-  min-height: 100vh;
-  display: flex;
-  margin-top: 40px;
-
+.intermedio-container-2 {
+  margin-top: 100px;
 }
 
-.container-left {
-  background-color: rgb(220, 211, 211);
-  width: 250px;
-}
-
-.container-right {
-  flex: 1;
-  padding: 0 10px;
+.title h3 {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
 }
 
-.card-alimentos {
-  width: 300px;
-  overflow: hidden;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 1px solid silver;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.section-index {
+  background-color: #fff;
+  border: 1px black solid;
 }
 
-
-.index-presentancion h2 {
-  font-size: 1.8em;
-  padding: 0 10px;
-}
-
-.category{
-  padding: 0 10px;
-}
-
-.index-comtainer-productos{
-  flex-wrap: wrap;
+.menu-index {
+  padding: 40px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+
 }
 
-.index-img-alimento{
-  width: 100%;
-  aspect-ratio: 4/3;
-  background-color: silver;
+.index-cards {
+  padding-bottom: 20px;
+  padding: 20px;
 }
 
-.index-img-alimento img{
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
 
 
 footer {
@@ -358,6 +328,16 @@ footer {
   .card-baños .card-img-baños .card .contenido {
     padding: 10%;
     top: 10%;
+  }
+
+
+
+  .menu-index {
+    display: grid;
+    grid-column: auto;
+    gap: 10px;
+    padding-top: 1%;
+    padding-right: 140px;
   }
 
   .slider {

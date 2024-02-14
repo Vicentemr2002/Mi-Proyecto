@@ -13,13 +13,11 @@
 <body>
     <header>
 
-
-
         <div class="header-izquierda">
 
             <div class="boton-abrir" id="open">
 
-                <img src="../assets/img/menu.svg" alt="">
+                <img src="../assets/img/menu.svg">
 
             </div>
         </div>
@@ -30,6 +28,8 @@
                 <img src="../assets/img/logo_mascotitas.svg">
             </div>
         </div>
+
+
 
         <nav id="main-menu">
 
@@ -75,40 +75,56 @@
     </header>
 
 
-    <h1>Productos</h1>
+    <div class="intermedio-container-2">
 
+        <div class="section-index">
 
-
-    <div class="container-intermedio">
-
-
-        <div class="container-left">
-            <div class="index-presentancion">
-                <h2>Productos</h2>
+            <div class="title">
+                <h3>Productos</h3>
             </div>
 
-            <div class="index-menu">
-                <div class="category">
-                    <div class="category-productos">Alimentos</div>
-                    <div class="category-productos">Ropa</div>
-                    <div class="category-productos">Juguetes</div>
-                    <div class="category-productos">Accesorios</div>
+            <div class="menu-index">
+                <div class="index-alimentos">
+                    <label class="pb-2">Alimentos</label>
+                    <select form="controls" name="aliemntos" id="alimentos">
+                        <option value="Todos">--Todos--</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Pro-plan">Pro-plan</option>
+                        <option value="Dog Chow">Dog Chow</option>
+                        <option value="Cat Chow">Cat Chow</option>
+                        <option value="Eukanuba">Eukanuba</option>
+                        <option value="Complement">Complement</option>
+                        <option value="Balanced">Balanced</option>
+                    </select>
+                </div>
+
+                <div class="index-ropa">
+                    <label for="pb-2">Ropa</label>
+                    <select form="controls" name="ropa" id="ropa">
+                        <option value="Todos">--Todos--</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <div class="index-accesorios">
+                    <label for="pb-2">Accesorios</label>
+                    <select form="controls" name="accesorios" id="accesorios">
+                        <option value="Todos">--Todos--</option>
+                    </select>
                 </div>
             </div>
         </div>
 
-        <div class="container-right">
-            <div class="index-presentancion">
-                <h2>Aca esta las cards</h2>
-            </div>
-            <div class="card-alimentos">
+        <div class="index-cards">
 
-                <div class="index-img-alimento">
+            <div class="card-productos">
+
+                <div class="img-alimento">
                     <img src="../assets/img/alimento-proplan.png" alt="">
                 </div>
 
-                <div class="index-comtainer-productos">
-                    <div class="alimento">Ropa</div>
+                <div class="contenido-alimento">
+                    <div class="alimento">Juguete</div>
                     <div class="precio-alimento"> 1000ARS</div>
                     <div class="categoria">
                         <div class="categoria-alimento">Alimento Seco</div>
@@ -121,27 +137,10 @@
                 </div>
             </div>
 
-            <div class="card-alimentos">
-
-                <div class="index-img-alimento">
-                    <img src="../assets/img/alimento-proplan.png" alt="">
-                </div>
-
-                <div class="index-comtainer-productos">
-                    <div class="alimento">Ropa</div>
-                    <div class="precio-alimento"> 1000ARS</div>
-                    <div class="categoria">
-                        <div class="categoria-alimento">Alimento Seco</div>
-                        <div class="categoria-alimento">Alimento para gatos</div>
-                        <div class="categoria-alimento">Adulto</div>
-                    </div>
-                    <div class="button-alimento">
-                        <button>Comprar</button>
-                    </div>
-                </div>
-            </div>
         </div>
+
     </div>
+
 
 
     <footer>
@@ -171,8 +170,8 @@
 
         </div>
     </footer>
-
+    <script src="../assets/js/slider.js"></script>
 </body>
-<script src="../assets/js/index.js"></script>
+
 
 </html>
