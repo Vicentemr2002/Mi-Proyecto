@@ -1,26 +1,11 @@
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
-let openmain = document.getElementById('open');
-let closemain = document.getElementById('close');
-let mainMenu = document.getElementById('main-menu');
 
 
 let cardBañosDom = document.querySelector('.card-baños');
 let listItemDom = document.querySelector('.card-baños .card-img-baños');
 let thumbnailDom = document.querySelector('.card-baños .mini-fotos');
 
-
-
-openmain.onclick = () => {
-
-    mainMenu.classList.add('menu-open');
-}
-
-
-closemain.onclick = () => {
-
-    mainMenu.classList.remove('menu-open');
-}
 
 nextDom.onclick = function () {
     showSlider('next');
