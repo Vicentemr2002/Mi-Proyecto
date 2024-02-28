@@ -51,6 +51,7 @@ header {
     transition: all 0.5s linear;
     display: flex;
     flex-direction: column;
+    transition: 0.5;
 
 }
 
@@ -99,7 +100,9 @@ a {
     text-decoration: none;
     padding: 2px 1px 0;
     font-size: 25px;
+    transition: 0.4s;
 }
+
 
 a:link {
     color: white;

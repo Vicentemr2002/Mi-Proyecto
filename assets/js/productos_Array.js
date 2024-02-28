@@ -71,8 +71,9 @@ categoria.forEach(function(valor) {
 
 
 categoryfiltros.addEventListener("change", function() {
-
- 
+   
+    
+   
 })
 
 let indexFiltro = document.getElementById('productos');
