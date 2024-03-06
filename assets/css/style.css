@@ -966,7 +966,19 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.index-category{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+
+}
+
+select{
+    
 }
 
 .section-index {

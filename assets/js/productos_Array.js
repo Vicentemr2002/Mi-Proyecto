@@ -13,11 +13,11 @@ let categoria = [
 
             },
             {
-              titulo: "Raza",
-              opciones:["Perro","Gato"]  
+                titulo: "Razas",
+                opciones: ["Perro", "Gato"]
             },
             {
-                titulo: "Tipo De Alimento",
+                titulo: "Tipo De Alimentos",
                 opciones: [
                     "Tipo Seco", "Tipo Humedo"
                 ]
@@ -37,7 +37,7 @@ let categoria = [
         propiedades: [
             {
                 titulo: "talla",
-                talla: [
+                opciones: [
                     "00(cm)", "0(25cm)", "1(30cm)", "2(35cm)", "3(40cm)", "4(45cm)", "5(50cm)",
                     "6(55cm)", "7(60cm)", "8(65cm)", "8(70cm)", "9(75cm)", "10(80cm)"
                 ]
@@ -60,20 +60,64 @@ let categoria = [
 
 
 let categoryfiltros = document.getElementById('filtros-categoria');
-categoria.forEach(function(valor) {    
-      let option = document.createElement("option");
-      option.value = valor.id
-      option.innerText = valor.nombre
-      categoryfiltros.appendChild(option);
-    }
+let result = document.getElementById('result')
+let filtroCategoria = document.getElementById('productos')
+let filtrosActuales = []
+
+categoria.forEach(function (valor) {
+    let option = document.createElement("option");
+    option.value = valor.id
+    option.innerText = valor.nombre
+    categoryfiltros.appendChild(option);
+}
 
 )
 
 
-categoryfiltros.addEventListener("change", function() {
-   
-    
-   
+categoryfiltros.addEventListener("change", function (e) {
+
+    let propiedades = categoria[e.target.value].propiedades
+
+
+    filtrosActuales.forEach(function(filtro) {
+
+        filtroCategoria.removeChild(filtro);
+
+    })
+
+    filtrosActuales = []
+
+    for (let i = 0; i < propiedades.length; i++) {
+
+        let select = document.createElement('select')
+
+        
+        
+        for (let j = 0; j < propiedades[i].opciones.length; j++) {
+
+            let opctionElement = document.createElement('option')
+
+            opctionElement.innerText = propiedades[i].opciones[j]
+            select.appendChild(opctionElement);
+
+            
+        }
+         
+         let label = document.createElement('label');
+
+         label.innerText = propiedades[i].titulo
+
+        filtroCategoria.appendChild(label);
+        filtroCategoria.appendChild(select);
+        filtrosActuales.push(label)
+        filtrosActuales.push(select)
+    }
+
+
+
+
+
+
+
 })
 
-let indexFiltro = document.getElementById('productos');
