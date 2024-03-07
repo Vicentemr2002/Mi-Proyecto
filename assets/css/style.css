@@ -968,6 +968,11 @@ h3 {
     align-items: center;
 }
 
+.title-de-alimentos{
+    font-size: 2.3rem;
+    padding-bottom: 10px;
+}
+
 .index-category{
 
     display: flex;
@@ -977,9 +982,7 @@ h3 {
 
 }
 
-select{
-    
-}
+
 
 .section-index {
     background-color: #fff;
@@ -1004,6 +1007,15 @@ select{
 
 }
 
+.title-excellent{
+    font-size: 1.7rem;
+}
+
+.alimento-excellent{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
 
 
 footer {
