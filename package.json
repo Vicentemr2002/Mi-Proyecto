@@ -1,0 +1,17 @@
+{
+  "name": "kotitas",
+  "version": "1.0.0",
+  "description": "Tienda +Kotitas",
+  "main": "index",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --mode=development && live-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "url": "https://github.com/Vicentemr2002"
+  },
+  "author": "Jose Vitriago",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

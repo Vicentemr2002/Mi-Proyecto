@@ -13,11 +13,11 @@ let categoria = [
 
             },
             {
-                titulo: "Razas",
+                titulo: "Raza",
                 opciones: ["Perro", "Gato"]
             },
             {
-                titulo: "Tipo De Alimentos",
+                titulo: "Tipo De Alimento",
                 opciones: [
                     "Tipo Seco", "Tipo Humedo"
                 ]
@@ -79,7 +79,7 @@ categoryfiltros.addEventListener("change", function (e) {
     let propiedades = categoria[e.target.value].propiedades
 
 
-    filtrosActuales.forEach(function(filtro) {
+    filtrosActuales.forEach(function (filtro) {
 
         filtroCategoria.removeChild(filtro);
 
@@ -91,8 +91,8 @@ categoryfiltros.addEventListener("change", function (e) {
 
         let select = document.createElement('select')
 
-        
-        
+
+
         for (let j = 0; j < propiedades[i].opciones.length; j++) {
 
             let opctionElement = document.createElement('option')
@@ -100,24 +100,17 @@ categoryfiltros.addEventListener("change", function (e) {
             opctionElement.innerText = propiedades[i].opciones[j]
             select.appendChild(opctionElement);
 
-            
-        }
-         
-         let label = document.createElement('label');
 
-         label.innerText = propiedades[i].titulo
+        }
+
+        let label = document.createElement('label');
+        label.innerText = propiedades[i].titulo
 
         filtroCategoria.appendChild(label);
         filtroCategoria.appendChild(select);
         filtrosActuales.push(label)
         filtrosActuales.push(select)
     }
-
-
-
-
-
-
-
 })
+
 
