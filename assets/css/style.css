@@ -1011,9 +1011,11 @@ h3 {
     font-size: 1.7rem;
 }
 
-.alimento-excellent{
+.alimento-perro, 
+.alimento-gato{
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
