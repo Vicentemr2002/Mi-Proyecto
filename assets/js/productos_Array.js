@@ -8,18 +8,18 @@ let categoria = [
 
                 titulo: "Marca",
                 opciones: [
-                    "Execellent", "Pro plan", "Eukanuba", "Dog Chow"
+                    "Excellent", "Pro plan", "Eukanuba", "Dog Chow"
                 ]
 
             },
             {
-                titulo: "Raza",
-                opciones: ["Perro", "Gato"]
+                titulo: "Razas",
+                opciones: ["Alimento Para Perros", "Alimento Para Gatos"]
             },
             {
-                titulo: "Tipo De Alimento",
+                titulo: "Tipo De Alimentos",
                 opciones: [
-                    "Tipo Seco", "Tipo Humedo"
+                    "Alimento Seco", "Alimento Humedo"
                 ]
             },
             {
@@ -36,7 +36,7 @@ let categoria = [
         nombre: "Ropa",
         propiedades: [
             {
-                titulo: "talla",
+                titulo: "Tallas",
                 opciones: [
                     "00(cm)", "0(25cm)", "1(30cm)", "2(35cm)", "3(40cm)", "4(45cm)", "5(50cm)",
                     "6(55cm)", "7(60cm)", "8(65cm)", "8(70cm)", "9(75cm)", "10(80cm)"
