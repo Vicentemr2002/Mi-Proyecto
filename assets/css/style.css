@@ -985,10 +985,13 @@ h3 {
 
 
 .section-index {
-    background-color: #fff;
-    border: 1px black solid;
-    flex-wrap: wrap;
-    min-width: 300px;
+    box-shadow: 2px 2px 2px 5px silver;
+    box-sizing: 1px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 120px;
+    
+    
 }
 
 .menu-index {
@@ -1053,9 +1056,6 @@ footer {
     }
 
 
-    .title h3 {
-       display: none;
-    }
 
     .menu-index {
         display: grid;
