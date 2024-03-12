@@ -759,7 +759,8 @@ select {
 
 .excellent,
 .pro-plan,
-.dog-chow {
+.dog-chow,
+.eukanuba {
     background-color: white;
     border-radius: 10px;
     margin-bottom: 20px;
