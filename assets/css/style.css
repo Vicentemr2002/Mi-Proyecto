@@ -16,7 +16,8 @@ body {
 }
 
 header {
-    background-color: slateblue;
+    background-color: white;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0,0.24);
     position: fixed;
     z-index: 110;
     height: 100px;
@@ -32,9 +33,14 @@ header {
     height: 100%;
     flex: 1;
     justify-content: center;
+    align-items: center;
 }
 
-.header-logo,
+.header-logo{
+    height: 70%;
+    
+}
+
 .header-logo img {
     height: 100%;
     height: 100%;
@@ -42,7 +48,7 @@ header {
 
 #main-menu {
 
-    background-color: black;
+    background-color: white;
     position: fixed;
     height: 100%;
     top: 0;
@@ -106,11 +112,11 @@ a {
 
 
 a:link {
-    color: white;
+    color: black;
 }
 
 a:visited {
-    color: white;
+    color: black;
 }
 
 a:focus {
@@ -487,7 +493,6 @@ h3 {
 .container-accesorios {
     flex-wrap: wrap;
     display: flex;
-    justify-content: center;
     gap: 20px;
     background-color: white;
     margin: 20px;
@@ -495,7 +500,7 @@ h3 {
     padding-bottom: 10px;
     border-radius: 10px;
 
-} 
+}
 
 .img-alimento {
     width: 100%;
@@ -545,6 +550,8 @@ h3 {
     flex-wrap: wrap;
     gap: 5px 10px;
     padding: 10px 0;
+   
+
 }
 
 .categoria-alimento {
@@ -554,30 +561,19 @@ h3 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 0.8rem;
-
-
+    
 }
 
 .title-alimento h2 {
     padding: 0 50px;
     font-size: 1.7rem;
     padding-bottom: 10px;
-}
-
-.card-productos {
-    width: 300px;
-    overflow: hidden;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid silver;
-    display: flex;
-    flex-direction: column;
 
 }
 
 
 .card-productos {
-    width: 300px;
+    width: 100%;
     overflow: hidden;
     background-color: #ffffff;
     border-radius: 10px;
@@ -590,7 +586,8 @@ h3 {
 
 .img-alimento {
     width: 100%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 1;
+    min-height: 0;
     background-color: silver;
     min-height: 0;
 }
@@ -606,6 +603,7 @@ h3 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex: 1;
 }
 
 .precio-alimento {
@@ -670,7 +668,6 @@ h3 {
 .title {
     font-size: 2rem;
     padding-bottom: 10px;
-    margin-left: 20px;
 }
 
 .title h1 {
@@ -724,7 +721,6 @@ select {
 
 .section-index {
     box-shadow: 1px 1px 1px 1px white;
-    box-sizing: 1px;
     background-color: white;
     border-radius: 20px;
     margin: 20px;
@@ -759,20 +755,20 @@ select {
 
 .excellent,
 .pro-plan,
-.dog-chow {
+.dog-chow,
+.eukanuba {
     background-color: white;
     border-radius: 10px;
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    padding: 1.5rem;
 }
 
 
 .alimento-perro,
 .alimento-gato {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 
@@ -825,6 +821,11 @@ footer {
         width: 100%;
         justify-content: space-between;
         max-width: 100%;
+    }
+
+    .alimento-perro,
+    .alimento-gato {
+        justify-content: center;
     }
 
 

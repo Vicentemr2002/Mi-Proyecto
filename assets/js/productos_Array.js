@@ -114,3 +114,38 @@ categoryfiltros.addEventListener("change", function (e) {
 })
 
 
+import { initializeApp } from "firebase/app";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
+import app from "./firebaseconfig"
+
+const db = getFirestore(app);
+
+let render = document.getElementById("render_productos");
+const querySnapshot = await getDocs(collection(db, "productos"));
+
+querySnapshot.forEach((doc) => {
+    let producto = doc.data()
+    let html = `
+    <div class="card-productos">
+        <div class="img-alimento">
+            <img src="${producto["imagen"]}" alt="">
+        </div>
+        <div class="contenido-alimento">
+            <div class="alimento">${producto['name']}</div>
+            <div class="precio-alimento"> ${producto["precio"]}</div>
+            <div class="categoria">
+                <div class="categoria-alimento">Alimento Seco</div>
+                <div class="categoria-alimento">Excellent</div>
+                <div class="categoria-alimento">Alimento Para Perros</div>
+                <div class="categoria-alimento">Puppy</div>
+                <div class="categoria-alimento">Raza Pequeña</div>
+            </div>
+            <div class="button-alimento">
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>`
+    render.innerHTML = render.innerHTML + html;
+});
+
+
