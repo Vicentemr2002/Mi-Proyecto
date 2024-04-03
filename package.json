@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "firebase": "^10.10.0"
   }
 }
