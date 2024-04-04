@@ -1,17 +1,20 @@
 {
   "name": "kotitas",
-  "version": "1.0.0",
-  "description": "Tienda +Kotitas",
-  "main": "index",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "webpack",
-    "start": "webpack --mode=development && live-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "url": "https://github.com/Vicentemr2002"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "Jose Vitriago",
-  "license": "ISC",
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.1.4"
+  },
   "devDependencies": {
-    "webpack-cli": "^5.1.4"
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4"
   }
 }

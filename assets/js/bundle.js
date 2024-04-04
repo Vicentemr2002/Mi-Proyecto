@@ -1,16 +1,3 @@
-import { initializeApp } from "firebase/app";
-
-const firebaseConfig = {
-    //TU CONFIG DE FIREBASE
-};
-//Inicamos la app de firebase
-const app = initializeApp(firebaseConfig);
-
-export default app
-
-
-
-
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
  * This devtool is neither made for production nor for readable output files.
@@ -43,4 +30,3 @@ export default app
 /******/ 	
 /******/ })()
 ;
-
