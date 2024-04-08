@@ -11,7 +11,7 @@ export default function Turnos() {
             <Nav/>
     
 
-    <div class="intermedio-container">
+    <div className="intermedio-container">
         <h2>sadsa</h2>
     </div>
 

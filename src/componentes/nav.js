@@ -1,41 +1,48 @@
+"use client"
 
+import { useState } from "react"
+
+ 
 export default function Nav() {
+
+ const [abierto, cambiarAbierto] = useState(false) 
+
     return (
 
         <header>
 
-        <div class="header-izquierda">
+        <div className="header-izquierda">
 
-            <div class="boton-abrir" id="open">
+            <div className="boton-abrir" onClick={() => cambiarAbierto(true)}>
 
                 <img src="./img/menu.svg" alt=""/>
 
             </div>
         </div>
 
-        <div class="header-derecha">
+        <div className="header-derecha">
 
-            <div class="header-logo">
+            <div className="header-logo">
                 <img src="./img/logo_mascotitas.svg"/>
             </div>
         </div>
 
-        <nav id="main-menu">
+        <nav id="main-menu" className={abierto ? "menu-open" : ""}>
 
-            <div class="container-boton-cerrar">
+            <div className="container-boton-cerrar">
 
-                <div class="title-header">
-                    <div class="titulo">+Kotitas Tu Amigo fiel</div>
+                <div className="title-header">
+                    <div className="titulo">+Kotitas Tu Amigo fiel</div>
                 </div>
 
-                <div class="boton-cerrar" id="close">
+                <div className="boton-cerrar" onClick={() => cambiarAbierto(false)}>
 
                     <img src="./img/icons8-close.svg" alt=""/>
 
                 </div>
             </div>
 
-            <div class="enlances-container">
+            <div className="enlances-container">
                 <ol>
                     <li>
                         <a href="home.html">Home</a>
@@ -50,12 +57,12 @@ export default function Nav() {
             </div>
 
 
-            <div class="enlances-redsocial-container">
-                <a href="https://www.instagram.com/kotitasamigofiel/'" class="instagram" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
+            <div className="enlances-redsocial-container">
+                <a href="https://www.instagram.com/kotitasamigofiel/'" className="instagram" target="_blank">
+                    <i className="fa-brands fa-instagram"></i>
                 </a>
-                <a href="https://whatsapp.com/" class="whatsapp" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://whatsapp.com/" className="whatsapp" target="_blank">
+                    <i className="fa-brands fa-whatsapp"></i>
                 </a>
             </div>
 
