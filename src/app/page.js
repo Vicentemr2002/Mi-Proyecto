@@ -1,6 +1,6 @@
 import Nav from "../componentes/nav"; 
 import Footer from "@/componentes/footer";
-
+import ContainerProductos from "@/componentes/container-productos";
 
 
 
@@ -182,7 +182,7 @@ export default function Home() {
         <h2>Alimentos</h2>
     </div>
 
-    <div className="container-alimento">
+    <ContainerProductos>
 
                 <div className="card-productos">
                     <div className="img-alimento">
@@ -263,13 +263,13 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </div>
+    </ContainerProductos>
 
     <div className="title-alimento">
         <h2>Ropa</h2>
     </div>
 
-    <div className="container-ropa">
+    <ContainerProductos>
 
         <div className="card-productos">
 
@@ -349,15 +349,14 @@ export default function Home() {
                 </div>
             </div>
         </div>
-
-    </div>
+    </ContainerProductos>
 
 
     <div className="title-alimento">
         <h2>Juguetes y Accesorios</h2>
     </div>
 
-    <div className="container-accesorios">
+    <ContainerProductos>
 
         <div className="card-productos">
 
@@ -438,7 +437,7 @@ export default function Home() {
                 </div>
             </div>
         </div>
-    </div>
+    </ContainerProductos>
 
 </div>
 

@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 
+import  Link  from "next/link"
+
  
 export default function Nav() {
 
@@ -40,18 +42,19 @@ export default function Nav() {
                     <img src="./img/icons8-close.svg" alt=""/>
 
                 </div>
+
             </div>
 
             <div className="enlances-container">
                 <ol>
                     <li>
-                        <a href="home.html">Home</a>
+                        <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <a href="k.productos.html">Productos</a>
+                        <Link href="productos">Productos</Link>
                     </li>
                     <li>
-                        <a href="k.turnos.html">Turnos</a>
+                        <Link href="turnos">Turnos</Link>
                     </li>
                 </ol>
             </div>

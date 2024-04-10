@@ -504,7 +504,7 @@ h3 {
 
 .img-alimento {
     width: 100%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 1/3;
     background-color: silver;
 }
 
@@ -753,15 +753,6 @@ select {
 }
 
 
-.excellent,
-.pro-plan,
-.dog-chow,
-.eukanuba {
-    background-color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 1.5rem;
-}
 
 
 .alimento-perro,
