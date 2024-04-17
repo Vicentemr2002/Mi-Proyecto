@@ -3,22 +3,54 @@ import Footer from "@/componentes/footer";
 import ContainerProductos from "@/componentes/container-productos";
 import Productos from "./productos/page";
 import CardProducto from "../componentes/card-productos";
+import HomeIcon from "../svgs/home.svgs"
 
 
 
 
 
 export default function Home() {
- 
-    let Alimento = {
 
-        "Nombre" : "Nombre Alimento",
-        "Precio" : "1000ARS",
-        "Categoria" : [
-         
-        ]
+    let Alimento = [
+        {
+            "nombre": "Excellent || Gato Aduldto",
+            "precio": "1000 ARS",
+            "categoria": {
+                "marca": "Excellent",
+                "raza": "Gato",
+                "Tamaño": "Adulto",
+            }
+        },
+        {
+            "nombre": "Pro Plan || Perro Adulto",
+            "precio": "1000 ARS",
+            "categoria": {
+                "marca": "ProPlan",
+                "Raza": "Perro",
+                "Tamaño": "Adulto"
+            }
+        },
+        {
+            "nombre": "Eukanuba || Perro Adulto",
+            "precio": "1000 ARS",
+            "categoria": {
+                "marca": "Eukanuba",
+                "raza": "Perro",
+                "Tamaño": "Adulto"
+            }
+        },
+        {
+            "nombre": "Royal Canin || Perro Adulto",
+            "precio": "1000 ARS",
+            "categoria": {
+                "marca": "royalcanin",
+                "raza": "Perro",
+                "tamaño": "Adulto"
+            }
+        }
 
-    }
+
+    ]
 
 
 
@@ -27,22 +59,22 @@ export default function Home() {
         <body>
             <Nav />
 
-           
+
             <ContainerProductos>
 
-        
 
-               
+
+
 
                 <div className="title-alimento">
                     <h2>Alimentos</h2>
                 </div>
-               
-              <CardProducto />
 
-              <CardProducto />
+                <CardProducto />
 
-              
+                <CardProducto />
+
+
 
 
 
