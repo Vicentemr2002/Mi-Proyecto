@@ -2,6 +2,10 @@ import Nav from "@/componentes/nav";
 import Footer from "@/componentes/footer";
 
 export default function Productos() {
+
+   
+   
+
     return ( 
 
         <body>

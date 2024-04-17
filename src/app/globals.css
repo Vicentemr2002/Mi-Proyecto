@@ -43,7 +43,6 @@ header {
 
 .header-logo img {
     height: 100%;
-    height: 100%;
 }
 
 #main-menu {
@@ -133,31 +132,6 @@ a:hover {
     border-radius: 10px;
     transition: 0, 9;
 }
-
-.enlances-container {
-    flex: 1;
-}
-
-
-.enlances-redsocial-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.enlances-redsocial-container .whatsapp {
-    color: green;
-    font-size: 2.3em;
-}
-
-.enlances-redsocial-container .instagram {
-    color: #CB3A87;
-    font-size: 2.3em;
-}
-
-
 
 
 .intermedio-container {
@@ -491,22 +465,10 @@ h3 {
 .container-alimento,
 .container-ropa,
 .container-accesorios {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 20px;
-    background-color: white;
-    margin: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 10px;
+
 
 }
 
-.img-alimento {
-    width: 100%;
-    aspect-ratio: 1/3;
-    background-color: silver;
-}
 
 .img-alimento img {
     object-fit: contain;
@@ -515,11 +477,7 @@ h3 {
 }
 
 .contenido-alimento {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+
 }
 
 .precio-alimento {
@@ -555,12 +513,7 @@ h3 {
 }
 
 .categoria-alimento {
-    padding: 0 10px;
-    border: 1px silver solid;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.8rem;
+
     
 }
 
@@ -589,11 +542,9 @@ h3 {
     aspect-ratio: 1;
     min-height: 0;
     background-color: silver;
-    min-height: 0;
 }
 
 .img-alimento img {
-    object-fit: contain;
     width: 100%;
     height: 100%;
 }
@@ -606,27 +557,6 @@ h3 {
     flex: 1;
 }
 
-.precio-alimento {
-    color: green;
-    font-size: larger;
-}
-
-.button-alimento button {
-    border: none;
-    padding: 10px;
-    background-color: black;
-    transition: 0.3s;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    width: 150px;
-}
-
-.button-alimento button:hover {
-    transition: 0.3s;
-    background-color: #E6E6EA;
-    color: black;
-}
 
 .categoria {
     font-size: 15px;
