@@ -1,7 +1,6 @@
 import Nav from "../componentes/nav";
 import Footer from "@/componentes/footer";
 import ContainerProductos from "@/componentes/container-productos";
-import Slider from "@/componentes/Slider";
 import Productos from "./productos/page";
 import CardProducto from "../componentes/card-productos";
 
@@ -31,7 +30,7 @@ export default function Home() {
            
             <ContainerProductos>
 
-                <Slider />
+        
 
                
 
