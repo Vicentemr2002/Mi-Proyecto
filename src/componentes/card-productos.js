@@ -1,12 +1,12 @@
 import './card-producto.module.css'
-
+import Image from 'next/image'
 
 export default function CardProducto({producto}) {
     return(  
     <div className="card-productos">
     <div className="img-alimento">
-        <img src="./img//Excelent-cachorros-razas-pequenas-fotor-bg-remover-20240307153347.png"
-            alt=""/>
+        <Image src="/image/Excelent-cachorros-razas-pequenas-fotor-bg-remover-20240307153347.png"
+            width={500} height={500} alt=""/>
     </div>
     <div className="contenido-alimento">
         <div className="alimento">Excellent || Raza Pequeña Puppy x Fraccion</div>

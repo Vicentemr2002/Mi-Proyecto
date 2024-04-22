@@ -17,7 +17,7 @@ body {
 
 header {
     background-color: white;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0,0.24);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
     position: fixed;
     z-index: 110;
     height: 100px;
@@ -36,9 +36,9 @@ header {
     align-items: center;
 }
 
-.header-logo{
+.header-logo {
     height: 70%;
-    
+
 }
 
 .header-logo img {
@@ -102,35 +102,69 @@ header {
 
 
 a {
+    color: black;
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
     font-size: 25px;
-    transition: 0.4s;
-}
-
-
-a:link {
-    color: black;
-}
-
-a:visited {
-    color: black;
-}
-
-a:focus {
-    border-bottom: 1px solid;
-    background: white;
-    color: black;
+    transition: 0.3s;
 }
 
 
 a:hover {
-    border-bottom: 1px solid;
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     border-radius: 10px;
-    transition: 0, 9;
+    transition: 0, 3;
+}
+
+.container-baños{
+    padding: 150px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.index-baños {
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+    height: 250px;
+    width: 550px;
+    border-radius: 20px;
+}
+
+.animal,.adoption,
+.description-baños,
+.buttom-baños {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.description-baños,.adoption{
+    color: silver;
+    margin-top: 10px;
+}
+
+.buttom-baños button {
+    margin-top: 20px;
+    height: 50px;
+    width: 300px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.buttom-baños :hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
 }
 
 
@@ -158,38 +192,39 @@ footer {
 
 @media screen and (max-width:600px) {
 
-    .mini-fotos {
-        display: none !important;
+
+    .index-baños {
+        height: 350px;
+        width: 400px;
+        padding: 2rem;
+
+    }
+   
+    .container-baños{
+        display: block;
+        padding: 2rem;
     }
 
 
-    .card-baños .card-img-baños .card .contenido {
-        padding: 10%;
-        top: 10%;
+    .animal, .adoption{
+        font-size: 1.4em;
+    }
+    
+    .description-baños{
+        padding: 40px;
     }
 
 
 
-    .menu-index {
-        display: grid;
-        grid-column: auto;
-        gap: 10px;
-        padding-top: 1%;
-        padding-right: 140px;
+    .buttom-baños button{
+        height: 50px;
+        width: 300px;
+        font-size: 1.2em;
+    
     }
-
-
-    .slider {
-        top: 50%;
-        right: 0;
-        width: 100%;
-        justify-content: space-between;
-        max-width: 100%;
-    }
-
-    .alimento-perro,
-    .alimento-gato {
-        justify-content: center;
+    .buttom-baños{
+        position: relative;
+        bottom: 20px;
     }
 
 
