@@ -116,6 +116,58 @@ a:hover {
     color: white;
     border-radius: 10px;
     transition: 0, 3;
+<<<<<<< HEAD
+=======
+}
+
+.container-baños{
+    padding: 150px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.index-baños {
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+    height: 250px;
+    width: 550px;
+    border-radius: 20px;
+}
+
+.animal,.adoption,
+.description-baños,
+.buttom-baños {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.description-baños,.adoption{
+    color: silver;
+    margin-top: 10px;
+}
+
+.buttom-baños button {
+    margin-top: 20px;
+    height: 50px;
+    width: 300px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.buttom-baños :hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+>>>>>>> 7acdcb053c48fca6855dca3455de4f125f5e9922
 }
 
 
@@ -210,6 +262,7 @@ footer {
     .index-baños {
         height: 350px;
         width: 400px;
+<<<<<<< HEAD
         padding: 1.2rem;
 
     }
@@ -220,6 +273,24 @@ footer {
         padding: 1rems;
         
 
+=======
+        padding: 2rem;
+
+    }
+   
+    .container-baños{
+        display: block;
+        padding: 2rem;
+    }
+
+
+    .animal, .adoption{
+        font-size: 1.4em;
+    }
+    
+    .description-baños{
+        padding: 40px;
+>>>>>>> 7acdcb053c48fca6855dca3455de4f125f5e9922
     }
 
 
@@ -228,6 +299,7 @@ footer {
         font-size: 1.4em;
     }
 
+<<<<<<< HEAD
 
     .buttom-baños button {
         height: 50px;
@@ -260,6 +332,17 @@ footer {
     .index-card{
         font-size: 30px;
 
+=======
+    .buttom-baños button{
+        height: 50px;
+        width: 300px;
+        font-size: 1.2em;
+    
+    }
+    .buttom-baños{
+        position: relative;
+        bottom: 20px;
+>>>>>>> 7acdcb053c48fca6855dca3455de4f125f5e9922
     }
  
 
