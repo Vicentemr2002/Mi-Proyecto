@@ -12,7 +12,7 @@ export default function Turnos() {
     
 
     <div className="intermedio-container">
-        <h2>sadsa</h2>
+        <h2>Turnos de baños</h2>
     </div>
 
     

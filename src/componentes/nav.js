@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-
+import Image from "next/image"
 import  Link  from "next/link"
 
  
@@ -17,7 +17,7 @@ export default function Nav() {
 
             <div className="boton-abrir" onClick={() => cambiarAbierto(true)}>
 
-                <img src="./img/menu.svg" alt=""/>
+                <Image src="/image/menu.svg" alt="" width={50} height={50} />
 
             </div>
         </div>
@@ -25,7 +25,7 @@ export default function Nav() {
         <div className="header-derecha">
 
             <div className="header-logo">
-                <img src="./img/logo_mascotitas.svg"/>
+                <Image src="/image/logo_mascotitas.svg" width={500} height={500} />
             </div>
         </div>
 
@@ -39,7 +39,7 @@ export default function Nav() {
 
                 <div className="boton-cerrar" onClick={() => cambiarAbierto(false)}>
 
-                    <img src="./img/icons8-close.svg" alt=""/>
+                    <Image src="/image/icons8-close.svg" width={50} height={50} alt=""/>
 
                 </div>
 
