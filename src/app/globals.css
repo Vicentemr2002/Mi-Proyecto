@@ -116,8 +116,6 @@ a:hover {
     color: white;
     border-radius: 10px;
     transition: 0, 3;
-<<<<<<< HEAD
-=======
 }
 
 .container-baños{
@@ -167,7 +165,188 @@ a:hover {
     background-color: white;
     color: black;
     transition: 0.3s;
->>>>>>> 7acdcb053c48fca6855dca3455de4f125f5e9922
+}
+
+
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.descripcion-footer {
+    color: white;
+}
+
+.title-footer {
+    color: white;
+    font-size: 1.4rem;
+    padding: 0 10px;
+}
+
+.footer-date {
+    font-size: 0.9rem;
+    padding: 0 20px;
+}
+
+@media screen and (max-width:600px) {
+
+
+    .index-baños {
+        height: 350px;
+        width: 400px;
+        padding: 2rem;
+
+    }
+   
+    .container-baños{
+        display: block;
+        padding: 2rem;
+    }
+
+
+    .animal, .adoption{
+        font-size: 1.4em;
+    }
+    
+    .description-baños{
+        padding: 40px;
+    }
+
+
+
+    .buttom-baños button{
+        height: 50px;
+        width: 300px;
+        font-size: 1.2em;
+    
+    }
+    .buttom-baños{
+        position: relative;
+        bottom: 20px;
+    }
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+
+
+body {
+    font-family: Poppins;
+    font-size: 20px;
+    overflow-x: hidden;
+    background-color: #E7E6EF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
+    position: fixed;
+    z-index: 110;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-derecha {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    height: 70%;
+
+}
+
+.header-logo img {
+    height: 100%;
+}
+
+#main-menu {
+
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: -80%;
+    width: 80%;
+    max-width: 400px;
+    transition: all 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5;
+
+}
+
+
+
+#main-menu .container-boton-cerrar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    display: flex;
+}
+
+
+.title-header .titulo {
+    font-size: 1.4rem;
+    padding: 0 10px;
+
+}
+
+#main-menu.menu-open {
+    left: 0;
+    transition: all 0.5s linear;
+}
+
+#main-menu li {
+
+    list-style: none;
+
+}
+
+#main-menu a {
+
+    text-decoration: none;
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+    position: relative;
+    left: 10px;
+}
+
+
+
+a {
+    color: black;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+
+a:hover {
+    background: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0, 3;
 }
 
 
@@ -262,7 +441,6 @@ footer {
     .index-baños {
         height: 350px;
         width: 400px;
-<<<<<<< HEAD
         padding: 1.2rem;
 
     }
@@ -273,24 +451,6 @@ footer {
         padding: 1rems;
         
 
-=======
-        padding: 2rem;
-
-    }
-   
-    .container-baños{
-        display: block;
-        padding: 2rem;
-    }
-
-
-    .animal, .adoption{
-        font-size: 1.4em;
-    }
-    
-    .description-baños{
-        padding: 40px;
->>>>>>> 7acdcb053c48fca6855dca3455de4f125f5e9922
     }
 
 
@@ -299,7 +459,6 @@ footer {
         font-size: 1.4em;
     }
 
-<<<<<<< HEAD
 
     .buttom-baños button {
         height: 50px;
@@ -332,17 +491,6 @@ footer {
     .index-card{
         font-size: 30px;
 
-=======
-    .buttom-baños button{
-        height: 50px;
-        width: 300px;
-        font-size: 1.2em;
-    
-    }
-    .buttom-baños{
-        position: relative;
-        bottom: 20px;
->>>>>>> 7acdcb053c48fca6855dca3455de4f125f5e9922
     }
  
 
