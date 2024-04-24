@@ -2,49 +2,10 @@ import Nav from "../componentes/nav";
 import Footer from "@/componentes/footer";
 import ContainerProductos from "@/componentes/container-productos";
 import CardProducto from "@/componentes/card-productos";
+import Testimonios from "@/componentes/testimonios";
 import Image from "next/image";
+import Link from "next/link";
 
-
-let Alimento = [
-    {
-        "nombre": "Excellent || Gato Aduldto",
-        "precio": "1000 ARS",
-        "categoria": {
-            "marca": "Excellent",
-            "raza": "Gato",
-            "Tamaño": "Adulto",
-        }
-    },
-    {
-        "nombre": "Pro Plan || Perro Adulto",
-        "precio": "1000 ARS",
-        "categoria": {
-            "marca": "ProPlan",
-            "Raza": "Perro",
-            "Tamaño": "Adulto"
-        }
-    },
-    {
-        "nombre": "Eukanuba || Perro Adulto",
-        "precio": "1000 ARS",
-        "categoria": {
-            "marca": "Eukanuba",
-            "raza": "Perro",
-            "Tamaño": "Adulto"
-        }
-    },
-    {
-        "nombre": "Royal Canin || Perro Adulto",
-        "precio": "1000 ARS",
-        "categoria": {
-            "marca": "royalcanin",
-            "raza": "Perro",
-            "tamaño": "Adulto"
-        }
-    }
-
-
-]
 
 export default function Home() {
     return (
@@ -60,15 +21,19 @@ export default function Home() {
                     <div className="adoption">Reserve Su Turno</div>
                     <div className="description-baños">Damos los turnos de lunes a viernes de 10 a 20 Hs</div>
                     <div className="buttom-baños">
-                        <button>Turnos De Baños</button>
+                        <Link className="bt-button" href="turnos">Solicitar Turno</Link>
                     </div>
                 </div>
             </div>
 
             <ContainerProductos>
 
-                <CardProducto />
+           <CardProducto>
+            
+            </CardProducto> 
 
+
+           <Testimonios/>
 
             </ContainerProductos>
 

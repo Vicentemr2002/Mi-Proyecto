@@ -1,77 +1,70 @@
 "use client"
 
 import { useState } from "react"
+import style from "./nav.module.css"
 import Image from "next/image"
-import  Link  from "next/link"
+import Link from "next/link"
 
- 
+
 export default function Nav() {
 
- const [abierto, cambiarAbierto] = useState(false) 
+    const [abierto, cambiarAbierto] = useState(false)
 
     return (
 
-        <header>
+        <header className={style.header}>
 
-        <div className="header-izquierda">
+            <div className="header-izquierda">
 
-            <div className="boton-abrir" onClick={() => cambiarAbierto(true)}>
+                <div className={style.botonAbrir} onClick={() => cambiarAbierto(true)}>
 
-                <Image src="/image/menu.svg" alt="" width={50} height={50} />
-
-            </div>
-        </div>
-
-        <div className="header-derecha">
-
-            <div className="header-logo">
-                <Image src="/image/logo_mascotitas.svg" width={500} height={500} />
-            </div>
-        </div>
-
-        <nav id="main-menu" className={abierto ? "menu-open" : ""}>
-
-            <div className="container-boton-cerrar">
-
-                <div className="title-header">
-                    <div className="titulo">+Kotitas Tu Amigo fiel</div>
-                </div>
-
-                <div className="boton-cerrar" onClick={() => cambiarAbierto(false)}>
-
-                    <Image src="/image/icons8-close.svg" width={50} height={50} alt=""/>
+                    <Image src="/image/menu.svg" alt="" width={50} height={50} />
 
                 </div>
-
             </div>
 
-            <div className="enlances-container">
-                <ol>
-                    <li>
-                        <Link href="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="productos">Productos</Link>
-                    </li>
-                    <li>
-                        <Link href="turnos">Turnos</Link>
-                    </li>
-                </ol>
+            <div className={style.headerDerecha}>
+
+                <div className={style.headerLogo}>
+                    <Image src="/image/logo_mascotitas.svg" width={500} height={500} />
+                </div>
             </div>
 
+            <nav id={style.mainMenu} className={abierto ? style.menuOpen : ""}>
 
-            <div className="enlances-redsocial-container">
-                <a href="https://www.instagram.com/kotitasamigofiel/'" className="instagram" target="_blank">
-                    <i className="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://whatsapp.com/" className="whatsapp" target="_blank">
-                    <i className="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
+                <div className={style.containerBotonCerrar}>
 
-        </nav>
+                    <div className={style.titleHeader}>
+                        <div className="titulo">+Kotitas Tu Amigo fiel</div>a
+                    </div>
 
-    </header>
+                    <div className={style.botonCerrar} onClick={() => cambiarAbierto(false)}>
+
+        
+                            <Image src="/image/icons8-close.svg" width={50} height={50} alt="" />
+                        
+                    </div>
+
+                </div>
+
+                <div className={style.enlancesContainer}>
+                    <ol>
+                        <li>
+                            <Link className={style.a} href="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link className={style.a} href="productos">Productos</Link>
+                        </li>
+                        <li>
+                            <Link className={style.a} href="turnos">Turnos</Link>
+                        </li>
+                    </ol>
+                </div>
+
+
+            </nav>
+
+        </header>
 
     )
 }

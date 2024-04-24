@@ -1,0 +1,110 @@
+
+.alimento{
+    text-align: center;
+    font-size: 30px;
+}
+
+.precioAlimento{
+    color: green;
+    text-align: center;
+}
+
+.indexCard{
+    text-align: center;
+    
+}
+
+.categoria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.categoriaAlimento{
+    padding: 0 10px;
+    border: 1px silver solid;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.buttonAlimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.buttonAlimento button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.buttonAlimento button:hover{
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+.cardProducto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 60px;
+    border-radius: 10px;
+}
+
+.indexCard {
+    font-size: 1.6em;
+    margin-top: 60px;
+}
+
+
+@media screen and (max-width:600px) {
+    .imgAlimento img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .imgAlimento {
+        background-color: silver;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .cardProducto {
+        display: grid;
+        columns: auto;
+        padding: 1.2rem;
+        margin: 20px;
+
+    }
+
+    .contenidoAlimento { 
+        text-align: center;
+        padding: 1.2rem;
+        border: 1px solid silver;
+    }
+
+    .indexCard {
+        font-size: 30px;
+
+    }
+    
+    .categoria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

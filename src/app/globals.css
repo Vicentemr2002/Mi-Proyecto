@@ -15,347 +15,13 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-color: white;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
-    position: fixed;
-    z-index: 110;
-    height: 100px;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-
-}
-
-.header-derecha {
-    display: flex;
-    height: 100%;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-logo {
-    height: 70%;
-
-}
-
-.header-logo img {
-    height: 100%;
-}
-
-#main-menu {
-
-    background-color: white;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: -80%;
-    width: 80%;
-    max-width: 400px;
-    transition: all 0.5s linear;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5;
-
-}
-
-
-
-#main-menu .container-boton-cerrar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    display: flex;
-}
-
-
-.title-header .titulo {
-    font-size: 1.4rem;
-    padding: 0 10px;
-
-}
-
-#main-menu.menu-open {
-    left: 0;
-    transition: all 0.5s linear;
-}
-
-#main-menu li {
-
-    list-style: none;
-
-}
-
-#main-menu a {
-
-    text-decoration: none;
-    position: relative;
-    left: 10px;
-    text-decoration: none;
-    position: relative;
-    left: 10px;
-}
-
-
-
-a {
-    color: black;
-    outline: none;
-    text-decoration: none;
-    padding: 2px 1px 0;
-    font-size: 25px;
-    transition: 0.3s;
-}
-
-
-a:hover {
-    background: black;
-    color: white;
-    border-radius: 10px;
-    transition: 0, 3;
-}
-
-.container-baños{
-    padding: 150px;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-}
-
-.index-baños {
-    background-color: white;
-    padding: 20px;
-    margin: 50px;
-    height: 250px;
-    width: 550px;
-    border-radius: 20px;
-}
-
-.animal,.adoption,
-.description-baños,
-.buttom-baños {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-
-
-.description-baños,.adoption{
-    color: silver;
-    margin-top: 10px;
-}
-
-.buttom-baños button {
-    margin-top: 20px;
-    height: 50px;
-    width: 300px;
-    background-color: black;
-    border: none;
-    color: white;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.buttom-baños :hover {
-    background-color: white;
-    color: black;
-    transition: 0.3s;
-}
-
-
-
-
-footer {
-    background-color: rgb(0, 0, 0);
-
-}
-
-.descripcion-footer {
-    color: white;
-}
-
-.title-footer {
-    color: white;
-    font-size: 1.4rem;
-    padding: 0 10px;
-}
-
-.footer-date {
-    font-size: 0.9rem;
-    padding: 0 20px;
-}
-
-@media screen and (max-width:600px) {
-
-
-    .index-baños {
-        height: 350px;
-        width: 400px;
-        padding: 2rem;
-
-    }
-   
-    .container-baños{
-        display: block;
-        padding: 2rem;
-    }
-
-
-    .animal, .adoption{
-        font-size: 1.4em;
-    }
-    
-    .description-baños{
-        padding: 40px;
-    }
-
-
-
-    .buttom-baños button{
-        height: 50px;
-        width: 300px;
-        font-size: 1.2em;
-    
-    }
-    .buttom-baños{
-        position: relative;
-        bottom: 20px;
-    }
-
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
-
-
-body {
-    font-family: Poppins;
-    font-size: 20px;
-    overflow-x: hidden;
-    background-color: #E7E6EF;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: white;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
-    position: fixed;
-    z-index: 110;
-    height: 100px;
-    width: 100%;
-    top: 0;
-    display: flex;
-    align-items: center;
-
-}
-
-.header-derecha {
-    display: flex;
-    height: 100%;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
-.header-logo {
-    height: 70%;
-
-}
-
-.header-logo img {
-    height: 100%;
-}
-
-#main-menu {
-
-    background-color: white;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: -80%;
-    width: 80%;
-    max-width: 400px;
-    transition: all 0.5s linear;
-    display: flex;
-    flex-direction: column;
-    transition: 0.5;
-
-}
-
-
-
-#main-menu .container-boton-cerrar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    display: flex;
-}
-
-
-.title-header .titulo {
-    font-size: 1.4rem;
-    padding: 0 10px;
-
-}
-
-#main-menu.menu-open {
-    left: 0;
-    transition: all 0.5s linear;
-}
-
-#main-menu li {
-
-    list-style: none;
-
-}
-
-#main-menu a {
-
-    text-decoration: none;
-    position: relative;
-    left: 10px;
-    text-decoration: none;
-    position: relative;
-    left: 10px;
-}
-
-
-
-a {
-    color: black;
-    outline: none;
-    text-decoration: none;
-    padding: 2px 1px 0;
-    font-size: 25px;
-    transition: 0.3s;
-}
-
-
-a:hover {
-    background: black;
-    color: white;
-    border-radius: 10px;
-    transition: 0, 3;
-}
-
-
 
 .container-baños {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .index-baños {
@@ -364,6 +30,8 @@ a:hover {
     height: 250px;
     width: 550px;
     border-radius: 20px;
+    margin: 20px;
+
 }
 
 .animal,
@@ -373,6 +41,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
 }
 
@@ -383,35 +52,26 @@ a:hover {
     margin-top: 10px;
 }
 
-.buttom-baños button {
-    margin-top: 20px;
-    height: 50px;
-    width: 300px;
-    background-color: black;
-    border: none;
-    color: white;
-    border-radius: 20px;
-    transition: 0.3s;
+.bt-button {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s;
 }
 
-.buttom-baños :hover {
-    background-color: white;
+.bt-button:hover{
+    transition: 0.3s;
     color: black;
-    transition: 0.3s;
+    background-color: white;
 }
 
-.card-productos{
+.buttom-baños {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    margin: 60px;
-    border-radius: 10px;
-}
-
-.index-card{
-    font-size: 1.6em;
-    margin-top: 60px;
 }
 
 
@@ -437,20 +97,27 @@ footer {
 
 @media screen and (max-width:600px) {
 
+    .index-card{
+        display: none;
+    }
 
     .index-baños {
         height: 350px;
         width: 400px;
-        padding: 1.2rem;
+        margin: 6px;
+        text-align: center;
 
     }
 
 
     .container-baños {
         display: block;
-        padding: 1rems;
-        
+    }
 
+    .container-img-baños {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -462,36 +129,11 @@ footer {
 
     .buttom-baños button {
         height: 50px;
-        width: 300px;
+       
         font-size: 1.2em;
     }
 
-    .buttom-baños {
-        position: relative;
-        bottom: 20px;
-    }
-
-    .img-alimento img{
-        height: 300px;
-        width: 300px;
-    }
 
 
-    .card-productos{
-        display: grid;
-        grid-column: auto;
-        padding: 1.2rem;
-        margin: 20px;
-
-    }
-
-    .contenido-alimento{
-       padding: 1.2rem;         
-    }
-    .index-card{
-        font-size: 30px;
-
-    }
- 
 
 }
