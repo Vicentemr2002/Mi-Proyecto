@@ -11,14 +11,15 @@ export default function Nav() {
     const [abierto, cambiarAbierto] = useState(false)
 
     return (
-
         <header className={style.header}>
+
+            <link rel="apple-icon.png" href="/image/favicon.png" type="image/png" sizes="32x32"/>
 
             <div className="header-izquierda">
 
                 <div className={style.botonAbrir} onClick={() => cambiarAbierto(true)}>
 
-                    <Image src="/image/menu.svg" alt="" width={50} height={50} />
+                    <Image src="/image/menu.svg" alt="Menu-abrir" width={50} height={50} />
 
                 </div>
             </div>
@@ -26,7 +27,7 @@ export default function Nav() {
             <div className={style.headerDerecha}>
 
                 <div className={style.headerLogo}>
-                    <Image src="/image/logo_mascotitas.svg" width={500} height={500} />
+                    <Image src="/image/logo_mascotitas.svg" alt="logo" width={500} height={500} />
                 </div>
             </div>
 
@@ -35,14 +36,19 @@ export default function Nav() {
                 <div className={style.containerBotonCerrar}>
 
                     <div className={style.titleHeader}>
-                        <div className="titulo">+Kotitas Tu Amigo fiel</div>a
+                        <div className="titulo">+Kotitas Tu Amigo Fiel</div>
+
+                    </div>
+
+                    <div className={style.logoStyle}>
+                        <Image src="/image/logo_mascotitas.svg" alt="logo" width={100} height={100} />
                     </div>
 
                     <div className={style.botonCerrar} onClick={() => cambiarAbierto(false)}>
 
-        
-                            <Image src="/image/icons8-close.svg" width={50} height={50} alt="" />
-                        
+
+                        <Image src="/image/icons8-close.svg" width={50} height={50} alt="menu cerrar" />
+
                     </div>
 
                 </div>

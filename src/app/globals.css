@@ -75,26 +75,6 @@ body {
 }
 
 
-footer {
-    background-color: rgb(0, 0, 0);
-
-}
-
-.descripcion-footer {
-    color: white;
-}
-
-.title-footer {
-    color: white;
-    font-size: 1.4rem;
-    padding: 0 10px;
-}
-
-.footer-date {
-    font-size: 0.9rem;
-    padding: 0 20px;
-}
-
 @media screen and (max-width:600px) {
 
     .index-card{

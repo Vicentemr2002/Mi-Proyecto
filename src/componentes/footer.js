@@ -1,30 +1,24 @@
+import { stringifyCookie } from "next/dist/compiled/@edge-runtime/cookies"
+import style from "./footer.module.css"
+
 export default function Footer() {
 
     return (
 
-        <footer>
+        <footer className={style.footer}>
         <div class="end">
 
-            <div class="title-footer">
+            <div className={style.titleFooter}>
                 <h2>+Kotitas Tu Amigo Fiel</h2>
             </div>
 
-            <div class="descripcion-footer">
-                <div class="footer-date">Bs.Villa Crespo.Araoz 179.</div>
-                <div class="footer-date">
+            <div className={style.descripcionFooter}>
+                <div class={style.footerDate}>Bs.Villa Crespo.Araoz 179.</div>
+                <div class={style.footerDate}>
                     Numero De
                     Tel: 45855-8287
                     Celular: +54 11 2514-6260.
                 </div>
-            </div>
-
-            <div class="enlances-redsocial-container">
-                <a href="https://instagram.com/" class="instagram" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://whatsapp.com/" class="whatsapp" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
             </div>
 
         </div>

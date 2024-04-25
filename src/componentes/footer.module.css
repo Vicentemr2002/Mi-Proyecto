@@ -1,0 +1,20 @@
+
+.footer {
+    background-color: black;
+
+}
+
+.descripcionFooter {
+    color: white;
+}
+
+.titleFooter {
+    color: white;
+    font-size: 1.4rem;
+    padding: 0 10px;
+}
+
+.footerDate {
+    font-size: 0.9rem;
+    padding: 0 20px;
+}

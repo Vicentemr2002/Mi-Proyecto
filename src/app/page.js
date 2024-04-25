@@ -28,9 +28,9 @@ export default function Home() {
 
             <ContainerProductos>
 
-           <CardProducto>
+           <CardProducto/>
             
-            </CardProducto> 
+           
 
 
            <Testimonios/>
