@@ -1,23 +1,37 @@
+.cardProducto { 
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 15px) !important;
+    background-color: white; 
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.CardProductoTittles{
+    margin-left: 40px;
+    padding: 1.2rem;
+}
+
+.imgAlimento{
+    display: flex;
+    justify-content: center;
+}
 
 .alimento{
     text-align: center;
-    font-size: 30px;
-}
+    font-size: 40px;
+    }
 
 .precioAlimento{
     color: green;
     text-align: center;
-}
-
-.indexCard{
-    text-align: center;
-    
+    font-size: 30px;
 }
 
 .contenidoAlimento{
     margin-bottom: 50px;
 }
-
 .categoria{
     justify-content: center;
     display: flex;
@@ -58,24 +72,15 @@
     color: black;
 }
 
-.cardProducto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    margin: 20px;
-    gap: 10px;
-    width: 200px ;
-    border-radius: 10px;
-}
-
-.indexCard {
-    font-size: 1.6em;
-    margin-top: 60px;
-}
 
 
 @media screen and (max-width:600px) {
+
+    .CardProductoTittles{
+
+        text-align: center;
+    }
+
     .imgAlimento img {
         height: 300px;
         width: 300px;
@@ -88,12 +93,18 @@
         align-items: center;
     }
 
+    .alimento{
+        font-size: 20px;
+    }
+
 
     .cardProducto {
-        display: grid;
+        display: grid !important;  
         columns: auto;
         padding: 1.2rem;
         margin: 20px;
+        height: 100%;
+        margin: 30px;
 
     }
 

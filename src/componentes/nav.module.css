@@ -34,7 +34,8 @@
 
     background-color: white;
     position: fixed;
-    height: 100%;
+    height: 70%;
+    border-radius: 10px;
     top: 0;
     left: -80%;
     width: 80%;
@@ -43,6 +44,7 @@
     display: flex;
     flex-direction: column;
     transition: 0.5;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
 
 }
 
@@ -78,18 +80,16 @@
 }
 
 #mainMenu li {
-
     list-style: none;
-
+    text-align: center;
 }
 
 #mainMenu a {
-
+    font-size: 30px;
     text-decoration: none;
     position: relative;
     left: 10px;
-    position: relative;
-    left: 10px;
+
 }
 
 
@@ -116,6 +116,10 @@
 @media screen and (max-width:600px) {
     .headerLogo {
         padding: 1.2rem;
+    }
+
+    #mainMenu li{
+        text-align:left;
     }
    
 }

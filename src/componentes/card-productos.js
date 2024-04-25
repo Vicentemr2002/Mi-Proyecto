@@ -1,50 +1,51 @@
 'use client'
 
-import style from './card-producto.module.css';
-import Image from 'next/image';
-import Slider from 'react-slick';
+import style from './card-producto.module.css'
+import Image from 'next/image'
+import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 const alimentos = [
     {
-        nombre: "Excellent || Gato Adulto",
-        alimentos_image: "/image/proplancaturinary.png",
+        nombre: "Excellent || Gato Adulto x Fraccion",
+        alimentos_image: "/image/alimento-excellent..png",
         precio: "1000 ARS",
         categoria: {
             marca: "Excellent",
             raza: "Gato",
             tamaño: "Adulto",
+
         }
     },
     {
-        nombre: "Excellent || Gato Adulto",
+        nombre: "Pro Plan || Gato Adulto x Fraccion",
         alimentos_image: "/image/proplancaturinary.png",
         precio: "1000 ARS",
         categoria: {
-            marca: "Excellent",
+            marca: "Pro Plan",
             raza: "Gato",
             tamaño: "Adulto",
         }
     }, {
-        nombre: "Excellent || Gato Adulto",
-        alimentos_image: "/image/proplancaturinary.png",
+        nombre: "Royal Canin || Perro Adulto x Fraccion",
+        alimentos_image: "/image/alimento-royal-cannin.png",
         precio: "1000 ARS",
         categoria: {
-            marca: "Excellent",
-            raza: "Gato",
+            marca: "Royal Canin",
+            raza: "Perro",
             tamaño: "Adulto",
         }
     },
 ];
 
 
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,

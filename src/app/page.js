@@ -3,6 +3,7 @@ import Footer from "@/componentes/footer";
 import ContainerProductos from "@/componentes/container-productos";
 import CardProducto from "@/componentes/card-productos";
 import Testimonios from "@/componentes/testimonios";
+import cardBaños from "@/componentes/card-baños";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,14 +31,12 @@ export default function Home() {
 
            <CardProducto/>
             
-           
-
 
            <Testimonios/>
 
+           <cardBaños/>
+
             </ContainerProductos>
-
-
 
             <Footer />
 

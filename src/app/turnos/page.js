@@ -8,17 +8,17 @@ export default function Turnos() {
 
         <body>
 
-            <Nav/>
-    
+            <Nav />
 
-    <div className="intermedio-container">
-        <h2>Turnos de baños</h2>
-    </div>
 
-    
-    <Footer/>
+            <div className="intermedio-container">
+                <h2>Turnos de baños</h2>
+            </div>
+s
 
-</body>
+            <Footer />
+
+        </body>
 
     );
 }
