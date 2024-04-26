@@ -41,9 +41,11 @@ const alimentos = [
 
 
     const settings = {
-        dots: true,
         infinite: true,
+        autoPlay: true,
+        autoPlaySpeed: 1500,
         speed: 500,
+        cssEase: "linear",
         slidesToShow: 1,
         slidesToScroll: 1,
     responsive: [
