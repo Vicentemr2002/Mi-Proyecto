@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     width: calc(100% - 100px) !important;
+    height: 400px;
     background-color: white; 
     border-radius: 10px;
     margin: 50px;
@@ -38,6 +39,7 @@
     flex-wrap: wrap;
     gap: 5px;
     font-size: 15px;
+    
 }
 
 .categoriaAlimento{

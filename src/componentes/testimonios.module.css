@@ -1,7 +1,6 @@
 .testimoniosTitles{
     font-size: 32px;
     text-align: center;
-    margin-bottom:  55px;
     margin-top: 20px;
     
 }
@@ -12,7 +11,7 @@
     background-color: #f9f9f9;
     padding: 25px 28px;
     display: flex !important;
-    margin: 10px;
+    margin: 6px;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 40px;

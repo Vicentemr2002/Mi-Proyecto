@@ -41,6 +41,7 @@ const alimentos = [
 
 
     const settings = {
+        dots: true,
         infinite: true,
         autoPlay: true,
         autoPlaySpeed: 1500,
@@ -78,7 +79,7 @@ const alimentos = [
 
 
 const CardProducto = () => {
-    return (
+    return (    
         <>
             <h2 className={style.CardProductoTittles}>Los Mejores Productos</h2>
 
@@ -89,7 +90,7 @@ const CardProducto = () => {
                         alimentos.map((alimento, index) => (
                             <div key={index} className={style.cardProducto}>
                                 <div className={style.imgAlimento}>
-                                    <Image src={alimento.alimentos_image} alt='Alimentos' width={500} height={500} />
+                                    <Image src={alimento.alimentos_image} alt='Alimentos' width={300} height={300} />
                                 </div>
                                 <div className={style.contenidoAlimento}>
                                     <h3 className={style.alimento}>{alimento.nombre}</h3>
