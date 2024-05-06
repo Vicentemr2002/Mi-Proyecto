@@ -51,14 +51,14 @@
     font-size: 0.8rem;
 }
 
-.buttonAlimento{
+.btn{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-.buttonAlimento button{
+.btn button{
     font-size: 20px;
     width: 200px;
     height: 40px;
@@ -69,7 +69,7 @@
     transition: 0.3s;
 }
 
-.buttonAlimento button:hover{
+.btn button:hover{
     transition: 0.3s;
     background-color: white;
     color: black;

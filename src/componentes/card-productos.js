@@ -100,7 +100,7 @@ const CardProducto = () => {
                                         <p className={style.categoriaAlimento}>{alimento.categoria.raza}</p>
                                         <p className={style.categoriaAlimento}>{alimento.categoria.tamaño}</p>
                                     </div>
-                                    <div className={style.buttonAlimento}>
+                                    <div className={style.btn}>
                                         <button>Comprar</button>
                                     </div>
                                 </div>
