@@ -1,0 +1,9 @@
+.cardProducto {
+    display: grid !important;  
+    columns: auto;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+
+}
