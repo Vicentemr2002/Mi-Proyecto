@@ -17,8 +17,15 @@
 .imgBaños {
     display: flex;
     justify-content: center;
-    object-fit: 1;
 }
+
+
+.imgBaños Image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 .razaTurnos {
     font-size: 50px;
