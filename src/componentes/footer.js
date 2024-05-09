@@ -6,7 +6,7 @@ export default function Footer() {
     return (
 
         <footer className={style.footer}>
-        <div class="end">
+        <div className={style.end}>
 
             <div className={style.titleFooter}>
                 <h2>+Kotitas Tu Amigo Fiel</h2>
