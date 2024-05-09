@@ -6,15 +6,15 @@ export default function Footer() {
     return (
 
         <footer className={style.footer}>
-        <div class="end">
+        <div className={style.end}>
 
             <div className={style.titleFooter}>
                 <h2>+Kotitas Tu Amigo Fiel</h2>
             </div>
 
             <div className={style.descripcionFooter}>
-                <div class={style.footerDate}>Bs.Villa Crespo.Araoz 179.</div>
-                <div class={style.footerDate}>
+                <div className={style.footerDate}>Bs.Villa Crespo.Araoz 179.</div>
+                <div className={style.footerDate}>
                     Numero De
                     Tel: 45855-8287
                     Celular: +54 11 2514-6260.
