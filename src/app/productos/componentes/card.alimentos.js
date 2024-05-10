@@ -132,15 +132,46 @@ let producto = [
     }
   },
   {
-    nombre: "Pro Plan || Gato Adulto x Fraccion",
-    alimentos_image: "/image/proplancaturinary.png",
+    nombre: "Pro Plan || Pro-Plan Perro Adulto Raza Pequeña x Fraccion",
+    alimentos_image: "/image/propla perro adulto raza pequeña.png",
     precio: "1000 ARS",
     categoria: {
       marca: "Pro Plan",
       raza: "Gato",
       tamaño: "Adulto",
     }
-  }, {
+  }, 
+  {
+    nombre: "Pro Plan || Pro-Plan Perro Puppy Raza Pequeña x Fraccion",
+    alimentos_image: "/image/propla-puppy-raza-pequeña.png",
+    precio: "1000 ARS",
+    categoria: {
+      marca: "Pro Plan",
+      raza: "Gato",
+      tamaño: "Puppy",
+    }
+  }, 
+  {
+    nombre: "Pro Plan || Pro-Plan Perro Adulto Raza Mediana x Fraccion",
+    alimentos_image: "/image/proplan-adulto-raza-mediana.png",
+    precio: "1000 ARS",
+    categoria: {
+      marca: "Pro Plan",
+      raza: "Gato",
+      tamaño: "Adulto",
+    }
+  }, 
+  {
+    nombre: "Pro Plan || Pro-Plan Perro Puppy Raza Pequeña x Fraccion",
+    alimentos_image: "/image/proplan-puppy-raza-mediana.png",
+    precio: "1000 ARS",
+    categoria: {
+      marca: "Pro Plan",
+      raza: "Gato",
+      tamaño: "Adulto",
+    }
+  }, 
+  {
     nombre: "Royal Canin || Perro Adulto x Fraccion",
     alimentos_image: "/image/alimento-royal-cannin.png",
     precio: "1000 ARS",
@@ -159,10 +190,6 @@ const settings = {
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  autoplay: true,
-  speed: 2000,
-  autoplaySpeed: 1500,
-  cssEase: "linear",
   responsive: [
     {
       breakpoint: 1024,
