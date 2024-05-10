@@ -31,13 +31,13 @@ const turnos = [
 ]
 
 
-export default function Turnos() {
+export default function cardTurnos() {
     return (
 
 
         <div className={style.indexTurnos}>
             <div className={style.imgTurnos}>
-                <Image src={"/image/Caniche.png"} />
+                <Image src="/image/Caniche.png" width={500} height={500}/>
             </div>
         </div>
 

@@ -1,5 +1,7 @@
-.imgTurno {
-    position: relative;
-    left: 20px;
+.imgTurno Image {
     background-color: aquamarine;
+}
+
+.indexTurnos{
+    background-color: red;
 }
