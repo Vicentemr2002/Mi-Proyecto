@@ -1,6 +1,7 @@
 import Nav from "@/componentes/nav";
 import Footer from "@/componentes/footer";
-import cardTurnos from "./componentes/card.turnos";
+import CardTurnos from "./componentes/card.turnos";
+import ContainerProductos from "@/componentes/container-productos";
 
 export default function Turnos() {
 
@@ -11,8 +12,12 @@ export default function Turnos() {
 
             <Nav />
 
-       <cardTurnos />
+            <ContainerProductos>
 
+                <CardTurnos />
+
+            </ContainerProductos>
+            
             <Footer />
 
         </body>

@@ -31,13 +31,24 @@ const turnos = [
 ]
 
 
-export default function cardTurnos() {
+export default function CardTurnos() {
     return (
 
 
         <div className={style.indexTurnos}>
             <div className={style.imgTurnos}>
-                <Image src="/image/Caniche.png" width={500} height={500}/>
+                <Image src="/image/poodles.png" width={400} height={400} />
+            </div>
+            <div className={style.contenidoTurnos}>
+                <div className={style.title}>Raza: Caniche</div>
+                <div className={style.valores}>Baño: 7.500Ars</div>
+                <div className={style.valores}>Baño y Corte: 8.900Ars</div>
+                <div className={style.duracion}>Duracion: 2HS</div>
+                <div className={style.datoRaza}>Dato de raza: El caniche (en inglés, poodle) es una raza canina que hasta el siglo xv se consideró de uso exclusivo de los aristócratas y nobles.
+                    Fue un perro cobrador de aguas hasta el Renacimiento: recuperaban las presas ya cazadas que habían caído al agua, como patos y cisnes.</div>
+                <div className={style.btn}>
+                    <button>Pedir Turno</button>
+                </div>
             </div>
         </div>
 

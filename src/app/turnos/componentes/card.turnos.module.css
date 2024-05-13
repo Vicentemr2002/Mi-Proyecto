@@ -1,3 +1,93 @@
-.imgTurnos{
-    background-color: red;
+.indexTurnos {
+    background-color: white;
+    margin: 10px;
+    padding: 1.2rem;
+    margin-top: 100px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.imgTurnos {
+    background-color: #CC8A56;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.imgTurnos img{
+    object-fit: contain;
+}
+
+.contenidoTurnos {
+    background-color: #0359AE;
+    color: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    text-align: justify;
+    gap: 10px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.valores {
+    font-size: 30px;
+}
+
+.duracion {
+    font-size: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn button {
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn button:hover {
+    transition: 0.3s;
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+
+    .indexTurnos {
+        display: grid;
+        columns: auto;
+        
+    }
+
+    .imgTurnos img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .contenidoTurnos{
+        text-align: center;
+    }
+
+    .title{
+        font-size: 25px;
+    }
+
+    .valores,.duracion{
+        font-size: 20px;
+    }
+    
+
 }

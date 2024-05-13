@@ -1,7 +1,6 @@
 import Nav from "@/componentes/nav";
 import Footer from "@/componentes/footer";
-import CardProducto from "./componentes/card.alimentos";
-import cardAlimetos from "./componentes/card.alimentos";
+import CardAlimetos from "./componentes/card.alimentos";
 import ContainerProductos from "@/componentes/container-productos";
 
 
@@ -15,9 +14,8 @@ export default function producto() {
 
       <ContainerProductos>
 
-    <CardProducto />
     
-     <cardAlimetos />
+     <CardAlimetos />
        
       </ContainerProductos>
 
