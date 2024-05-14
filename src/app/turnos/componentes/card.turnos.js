@@ -1,7 +1,9 @@
+'use client'
+
 import style from './card.turnos.module.css'
 import Image from 'next/image'
 
-const turnos = [
+const t= [
     {
         raza: "Raza: Caniche",
         baños_image: "/image/Caniche.png",
@@ -31,26 +33,29 @@ const turnos = [
 ]
 
 
-export default function CardTurnos() {
+const CardTurnos = () => {
     return (
-
-
-        <div className={style.indexTurnos}>
-            <div className={style.imgTurnos}>
-                <Image src="/image/poodles.png" width={400} height={400} />
-            </div>
-            <div className={style.contenidoTurnos}>
-                <div className={style.title}>Raza: Caniche</div>
-                <div className={style.valores}>Baño: 7.500Ars</div>
-                <div className={style.valores}>Baño y Corte: 8.900Ars</div>
-                <div className={style.duracion}>Duracion: 2HS</div>
-                <div className={style.datoRaza}>Dato de raza: El caniche (en inglés, poodle) es una raza canina que hasta el siglo xv se consideró de uso exclusivo de los aristócratas y nobles.
-                    Fue un perro cobrador de aguas hasta el Renacimiento: recuperaban las presas ya cazadas que habían caído al agua, como patos y cisnes.</div>
-                <div className={style.btn}>
-                    <button>Pedir Turno</button>
-                </div>
-            </div>
-        </div>
-
+        <>
+            {
+                t.map((t, index) => (
+                    <div key={index} className={style.indexTurnos}>
+                        <div className={style.imgTurnos}>
+                            <Image src={t.baños_image} width={400} height={400} />
+                        </div>
+                        <div className={style.contenidoTurnos}>
+                            <h2 className={style.title}> {t.raza} </h2>
+                            <h1 className={style.valores}> {t.precio.baño} </h1>
+                            <h1 className={style.valores}> {t.precio.corte} </h1>
+                            <div className={style.duracion}> {t.duracion.duracion_baño} </div>
+                            <div className={style.duracion}> {t.duracion.duracion_baño_corte} </div>
+                            <div className={style.btn}>
+                                <button>Pedir Turno</button>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+        </>
     )
 }
+
+export default CardTurnos;

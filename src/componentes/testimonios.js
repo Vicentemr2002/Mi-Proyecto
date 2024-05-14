@@ -51,6 +51,7 @@ let clients = [
 
 const settings = {
     infinite: true,
+    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,

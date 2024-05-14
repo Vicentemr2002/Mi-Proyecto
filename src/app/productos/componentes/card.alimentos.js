@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react'
 
 
 const settings = {
+  arrows: false,
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
