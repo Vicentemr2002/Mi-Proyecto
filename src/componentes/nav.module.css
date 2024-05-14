@@ -3,7 +3,7 @@
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
     position: fixed;
     z-index: 110;
-    height: 100px;
+    height: 80px;
     width: 100%;
     top: 0;
     display: flex;
@@ -21,6 +21,7 @@
 
 .headerLogo img {
     height: 100%;
+    width: 100%;
 }
 
 .headerLogo {
@@ -34,7 +35,7 @@
 
     background-color: white;
     position: fixed;
-    height: 70%;
+    height: 100%;
     border-radius: 10px;
     top: 0;
     left: -80%;
@@ -43,7 +44,7 @@
     transition: all 0.5s linear;
     display: flex;
     flex-direction: column;
-    transition: 0.5;
+    transition: 0.3;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
 
 }
@@ -52,10 +53,8 @@
 
 #mainMenu .containerBotonCerrar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
-    display: flex;
 }
 
 
@@ -69,14 +68,18 @@
     text-align: center;
 }
 
-.logoStyle image{
+.logoStyle image    {
     height: 100%;
     width: 100%;
 }
 
+.logoStyle{
+   flex: 1;
+}
+
 #mainMenu.menuOpen {
     left: 0;
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
 }
 
 #mainMenu li {
@@ -92,16 +95,12 @@
 
 }
 
-
-
-
 .a {
     color: black;
     outline: none;
     text-decoration: none;
     padding: 2px 1px solid 0;
     font-size: 25px;
-    transition: 0.3s;
 }
 
 
@@ -112,14 +111,7 @@
     transition: 0, 3;
 }
 
-
-@media screen and (max-width:600px) {
-    .headerLogo {
-        padding: 1.2rem;
-    }
-
-    #mainMenu li{
-        text-align:left;
-    }
-   
+.placeholderHeader{
+    height: 80px;
+    width: 100%;
 }

@@ -18,10 +18,9 @@ body {
 .container-baños {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
 }
 
 .container-img-baños img{
@@ -35,7 +34,6 @@ body {
     width: 550px;
     border-radius: 20px;
     margin: 20px;
-    margin-left: 50px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
 
 }
@@ -92,20 +90,10 @@ body {
     .index-baños {
         height: 350px;
         width: 400px;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        margin: 40px;
         
     }
 
-
-    .container-baños {
-        display: block;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
 
     .container-img-baños {
         display: flex;
@@ -122,7 +110,6 @@ body {
 
     .buttom-baños button {
         height: 50px;
-       
         font-size: 1.2em;
     }
 

@@ -13,7 +13,6 @@ export default function producto() {
 
       <ContainerProductos>
 
-    
      <CardAlimetos />
        
       </ContainerProductos>

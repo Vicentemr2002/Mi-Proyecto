@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import app from '../../../../firebase'
-import { getFirestore,query,collection,onSnapshot } from "firebase/firestore";
+import { getFirestore, query, collection, onSnapshot } from "firebase/firestore";
 import { useEffect, useState } from 'react'
 
 
@@ -47,35 +47,35 @@ const CardAlimetos = () => {
 
   const [producto, setProducto] = useState(null);
 
-  useEffect(function() {
-      const db = getFirestore(app);
-      const q = query(collection(db, "productos"))
-      const unsub = onSnapshot(q, (snap) => {
-          const productosLimpios = snap.docs.map(element => {
-              return {
-                  id: element.id,
-                  ...element.data()
-              }
-          });
-          setProducto(productosLimpios)
+  useEffect(function () {
+    const db = getFirestore(app);
+    const q = query(collection(db, "productos"))
+    const unsub = onSnapshot(q, (snap) => {
+      const productosLimpios = snap.docs.map(element => {
+        return {
+          id: element.id,
+          ...element.data()
+        }
       });
-      return () => unsub();
+      setProducto(productosLimpios)
+    });
+    return () => unsub();
   }, [])
 
   if (producto == null) return <> <div style={{
-      height: "100vh",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
+    height: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   }}>CARGANDO...</div></>
 
   return (
     <>
       <div>
 
-        <h2 className={style.cardExcellentTittles}> Alimentos Excellent </h2>
+        <h2 className={style.cardTittles}> Alimentos Excellent </h2>
 
-        <Slider {...settings}>
+        <Slider className={style.slider} {...settings}>
           {
             producto.filter(p => (p.categoria.marca == "Excellent")).map((producto, index) => (
               <div key={index} className={style.cardProducto}>
@@ -99,10 +99,11 @@ const CardAlimetos = () => {
             ))}
         </Slider>
 
-        <h2 className={style.cardProplanTittles}> Alimentos Pro Plan </h2>
-        <Slider {...settings}>
+        <h2 className={style.cardTittles}> Alimentos Pro Plan </h2>
+
+        <Slider className={style.slider} {...settings}>
           {
-            producto.map((producto, index) => (
+            producto.filter(p => (p.categoria.marca == "Pro Plan")).map((producto, index) => (
               <div key={index} className={style.cardProducto}>
                 <div className={style.imgAlimento}>
                   <img src={producto.alimentos_image} alt='Alimentos' width={300} height={300} />
@@ -123,6 +124,8 @@ const CardAlimetos = () => {
               </div>
             ))}
         </Slider>
+        
+
       </div>
     </>
   )

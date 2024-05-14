@@ -11,6 +11,8 @@ export default function Nav() {
     const [abierto, cambiarAbierto] = useState(false)
 
     return (
+
+      <>  
         <header className={style.header}>
 
             <link rel="apple-icon.png" href="/image/favicon.png" type="image/png" sizes="32x32"/>
@@ -35,10 +37,6 @@ export default function Nav() {
 
                 <div className={style.containerBotonCerrar}>
 
-                    <div className={style.titleHeader}>
-                        <div className="titulo">+Kotitas Tu Amigo Fiel</div>
-
-                    </div>
 
                     <div className={style.logoStyle}>
                         <Image src="/image/logo_mascotitas.svg" alt="logo" width={100} height={100} />
@@ -69,8 +67,8 @@ export default function Nav() {
 
 
             </nav>
-
         </header>
-
+       <div className={style.placeholderHeader}></div>
+        </>
     )
 }
