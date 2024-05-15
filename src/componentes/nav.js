@@ -93,7 +93,7 @@ function Carrito() {
                                         Cantidad: {state.carrito[id]}
                                     </div>
 
-                                    <button onClick={() => dispatch({type:"REMOVE_CARRITO", value: id})}>
+                                    <button onClick={() => dispatch({ type: "REMOVE_CARRITO", value: id })}>
                                         <Image src="/image/icons8-close.svg" width={50} height={50} alt="menu cerrar" />
                                     </button>
                                 </div>
