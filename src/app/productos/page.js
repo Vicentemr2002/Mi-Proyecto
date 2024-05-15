@@ -5,22 +5,16 @@ import ContainerProductos from "@/componentes/container-productos";
 
 export default function producto() {
 
-  return (
+    return (
 
-    <body>
+        <>
+            <Nav />
+            <ContainerProductos>
+                <CardAlimetos />
+            </ContainerProductos>
+            <Footer />
+        </>
 
-      <Nav />
-
-      <ContainerProductos>
-
-     <CardAlimetos />
-       
-      </ContainerProductos>
-
-      <Footer />
-
-    </body>
-
-  );
+    );
 
 }

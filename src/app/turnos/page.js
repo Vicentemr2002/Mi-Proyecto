@@ -8,7 +8,7 @@ export default function Turnos() {
 
     return (
 
-        <body>
+        <>
 
             <Nav />
 
@@ -20,7 +20,7 @@ export default function Turnos() {
             
             <Footer />
 
-        </body>
+        </>
 
     );
 }

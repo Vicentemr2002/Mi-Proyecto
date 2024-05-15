@@ -7,11 +7,9 @@ import Testimonios from "@/componentes/testimonios";
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function Home() {
     return (
-
-        <body>
+        <>
             <Nav />
             <div className="container-baños">
                 <div className="container-img-baños">
@@ -26,20 +24,12 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
             <ContainerProductos>
-
-           <CardProducto/>
-        
-           <Testimonios/>
- 
-           <CardBaños/>
-
+                <CardProducto />
+                <Testimonios />
+                <CardBaños />
             </ContainerProductos>
-
             <Footer />
-
-        </body>
-
+        </>
     );
 }
