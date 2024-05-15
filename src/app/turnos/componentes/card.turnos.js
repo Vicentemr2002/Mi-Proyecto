@@ -48,7 +48,7 @@ const CardTurnos = () => {
                             <h1 className={style.valores}> {t.precio.corte} </h1>
                             <div className={style.duracion}> {t.duracion.duracion_baño} </div>
                             <div className={style.duracion}> {t.duracion.duracion_baño_corte} </div>
-                            <div className={style.btn}>
+                            <div id="shop" className={style.btn}>
                                 <button>Pedir Turno</button>
                             </div>
                         </div>

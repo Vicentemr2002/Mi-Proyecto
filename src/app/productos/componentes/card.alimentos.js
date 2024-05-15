@@ -118,13 +118,19 @@ const CardAlimetos = () => {
                     <p className={style.categoriaAlimento}>{producto.categoria.nombre_categoria}</p>
                   </div>
                   <div className={style.btn}>
-                    <button>Comprar</button>
+                    <button onClick={function () {
+                      let carrito = localStorage.getItem("carrito")
+                      if (carrito == null){
+                          
+                      }  
+                      
+                    }}>Comprar</button>
                   </div>
                 </div>
               </div>
             ))}
         </Slider>
-        
+
 
       </div>
     </>
