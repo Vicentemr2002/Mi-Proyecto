@@ -1,16 +1,23 @@
+function obtenerCarrito() {
+    try {
+        const carritoGuardado = localStorage.getItem('carrito');
 
-function crearCarrito() {
-
+        return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+    } catch (error) {
+        return [];
+    }
 }
 
-function traerCarrito() {
+function guardarCarrito(carrito) {
 
-}
+    let str = JSON.stringify(carrito)
 
-function agregarCarrito() {
+    localStorage.setItem("carrito", str)
 
 }
 
 function eliminarCarrito() {
+
+    localStorage.removeItem("carrito")
 
 }

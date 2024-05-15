@@ -11,7 +11,7 @@
 
 }
 
-.headerDerecha {
+.headerMenu {
     display: flex;
     height: 100%;
     flex: 1;
@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     transition: 0.3;
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 12px rgba(42, 40, 40, 0.24);
 
 }
 
@@ -79,7 +79,7 @@
 
 #mainMenu.menuOpen {
     left: 0;
-    transition: all 0.3s linear;
+    transition: all 0.3s linear;    
 }
 
 #mainMenu li {
@@ -114,4 +114,32 @@
 .placeholderHeader{
     height: 80px;
     width: 100%;
+}
+
+.carritoIndex{
+    background-color: white;
+    position: fixed;
+    height: 70%;
+    border-radius: 10px;
+    top: 0;
+    right: -80%;
+    width: 80%;
+    max-width: 400px;
+    transition: all 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3;
+    box-shadow: 0px 0px 12px rgba(42, 40, 40, 0.24);
+}
+
+.carritoAbierto{
+  right: 0;
+  height: 70%;
+}
+
+.carritoCerrar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+
 }
