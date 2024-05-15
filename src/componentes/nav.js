@@ -63,10 +63,9 @@ export default function Nav() {
 
                             <Image src="/image/icons8-close.svg" width={50} height={50} alt="menu cerrar" />
 
-                            <div className={style.titleCarrito}>Carrito</div>
-
+                            
                         </div>
-                        
+                        <div className={style.titleCarrito}>Carrito</div>
                     </div>
 
 
